@@ -1,0 +1,23 @@
+<div class="team-container">
+    <section class="meet-the-team-container" id="meetTeamContainer">
+        <div class="text-center">
+            <h2 class="team-title" id="teamTitle">Our Team</h2>
+            <p class="team-description" id="teamDescription">
+                Meet the best AMC & MB team in the whole wide world, including UK, Saudi Arabia, Malaysia, Indonesia and
+                more countries around the world. Meet the best AMC & MB team in the whole wide world, including UK,
+                Saudi Arabia, Malaysia, Indonesia and more countries around the world
+            </p>
+        </div>
+    </section>
+
+    <section class="meet-leadership-container" id="leadershipContainer">
+        <div>
+            <div class="row">
+                <div class="col-6 col-md-6 col-lg-4 card-gap d-flex justify-content-center"
+                    *ngFor="let member of teamMembers">
+                    <app-team-member-card [member]="member"></app-team-member-card>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

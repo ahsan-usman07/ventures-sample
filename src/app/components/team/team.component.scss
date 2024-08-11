@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 80vh;
+  }
+
+  .text-container{
+    padding: 5% 10% 0 10%;
+  }
+  
+  .left-container, .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    width: 120px;
+    height: 120px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    margin: 10px;
+    opacity: 0;
+  }
+
+  
+  @media screen and (max-width:576px) {
+    .text-container{
+      padding: 20px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+  }

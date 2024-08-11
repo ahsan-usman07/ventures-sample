@@ -1,0 +1,99 @@
+.intro,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+footer {
+    background: #04091E;
+}
+
+a {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 20px 0 0 0;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6e4ce1;
+}
+
+/* horizontal scroll */
+
+#horizontal-scoll {
+    padding: 200px 0;
+}
+
+.horizontal-scoll-wrapper {
+    overflow: hidden;
+    height: 525px;
+    background: #f7f7f7;
+    padding: 20px 0 20px 0;
+}
+
+.horizontal {
+    display: flex;
+    height: 100%;
+}
+
+.horizontal>div {
+    display: flex;
+    flex-shrink: 0;
+    padding: 0 5px;
+}
+
+.horizontal>div:first-child {
+    padding: 0 5px 0 15px;
+}
+
+.horizontal>div:last-child {
+    padding: 0 15px 0 5px;
+}
+
+.img-placeholder {
+    height: 60%;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #d9d9d9;
+}
+
+.btn-visit {
+    margin-top: 20px;
+    border-radius: 865.534px;
+    border: 0.866px solid var(--Primary, #000);
+    background: var(--White, #FFF);
+}
+
+.horizontal .card {
+    align-items: stretch;
+    width: 460px;
+    padding: 20px 20px;
+    background: #f7f7f7;
+    border-radius: 38px;
+    border: none;
+}
+
+.text {
+    margin: 20px 0 20px 0;
+    font-size: 17.328px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 20.794px;
+    /* 120% */
+    letter-spacing: 0.173px;
+}
+
+@media screen and (max-width:576px) {
+    #horizontal-scoll {
+        padding: 0 0;
+    }
+}

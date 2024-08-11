@@ -1,0 +1,35 @@
+.panel {
+    align-items: center;
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 20px 0;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.panel .panel-inner {
+    padding: 20px;
+}
+
+.pin-group--spaced {
+    display: flex;
+    align-items: center;
+    // height: 100vh;
+}
+
+.pin-group--small {
+    margin: 100px 0;
+}
+
+.module-info-card {
+    background-color: #f7f7f7;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    height: 80vh;
+    margin: 20px 0;
+    padding: 20px;
+    color: black;
+}

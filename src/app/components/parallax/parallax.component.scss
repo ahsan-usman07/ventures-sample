@@ -1,0 +1,27 @@
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .column {
+    flex-direction: column;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+  
+  .gradient-blue {
+    background: linear-gradient(45deg, #6b8cff, #a7baff);
+  }
+  

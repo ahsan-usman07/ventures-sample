@@ -1,0 +1,149 @@
+.team-container {
+    margin: 40px 52px 40px 52px;
+}
+
+/* Styles for the Meet the Team section */
+
+.team-title {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 72px;
+    position: relative;
+    z-index: 10;
+    background-color: white; /* To avoid text overlap */
+}
+
+.team-description {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 32px;
+    padding: 0 160px 0 160px;
+    word-break: break-word;
+    position: relative;
+    z-index: 10;
+    background-color: white; /* To avoid text overlap */
+}
+
+.meet-leadership-container {
+    background-color: white; /* Ensure solid background to cover text below */
+    position: relative;
+}
+
+
+/* Styles for the Ethos Invest Team section */
+.ethos-invest-team-title{
+    margin-top: 44px;
+}
+
+.ethos-invest-team-title,
+.meet-leadership-title {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+}
+
+.ethos-invest-team-description {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+}
+
+
+/* Meet Leadership styles */
+
+.card-gap {
+    margin-bottom: 60px;
+    padding: 0 15px 0 15px;
+}
+
+::ng-deep .custom-dialog-panel {
+    --mdc-dialog-container-color: white;
+    height: 90%;
+
+    .mat-mdc-dialog-container .mdc-dialog__surface {
+        border-radius: 40px;
+        overflow: auto;
+    }
+
+    .mat-mdc-dialog-content {
+        max-height: initial;
+    }
+}
+
+::ng-deep .popupBackdropClass{
+    background: rgba(0, 0, 0, .32);
+}
+
+
+/* For Responsiveness */
+
+@media (max-width: 992px) {
+    .team-description {
+        padding: 0 100px 0 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-description {
+        padding: 0 75px 0 75px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .team-container {
+        margin: 21px 14px 20px 14px;
+    }
+
+    .card-gap {
+        margin-bottom: 20px;
+        padding: 0 8px 0 8px;
+    }
+
+    .team-title {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 72px;
+    }
+    
+    .team-description {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 160% */
+        letter-spacing: 0.5px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .ethos-invest-team-title {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 44px;
+        margin-bottom: 24px;
+    }
+
+    ::ng-deep .custom-dialog-panel {
+        max-width: 100% !important;
+        height: 90%;
+        min-width: 100% !important;
+        align-self: flex-end !important;
+
+        .mat-mdc-dialog-container .mdc-dialog__surface {
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+    }
+    ::ng-deep .popupBackdropClass{
+        background-color: rgba(0, 58, 136, 0.4);
+    }
+}
+

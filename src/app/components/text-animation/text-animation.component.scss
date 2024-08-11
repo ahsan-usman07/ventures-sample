@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // height: 80vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 10%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.arrow {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .logo{
+    font-size: 20px;
+  }
+
+  .tagline{
+    display: none;
+  }
+}
+///
+/// 
+/// 
+.full-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 15%;
+  text-align: center;
+}
+
+.first-head {
+  text-align: left;
+  font-size: 6rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.second-head {
+  text-align: end;
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.desc-text {
+  margin-top: 10%;
+  font-size: 1.2rem;
+  font-weight: 100;  
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .full-container {
+    padding: 0 5%;
+  }
+
+  .first-head {
+    font-size: 2.5rem;
+  }
+
+  .second-head {
+    font-size: 2rem;
+  }
+
+  .desc-text {
+    font-size: 0.9rem;
+  }
+}

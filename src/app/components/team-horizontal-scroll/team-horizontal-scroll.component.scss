@@ -1,0 +1,39 @@
+.testimonial-wrapper {
+    overflow: hidden;
+    display: flex;
+    height: 150vh; /* Adjusted height to accommodate both containers */
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    margin-top: 20px; /* Adjust the space between the containers */
+    height:auto; /* Ensure each container takes distinct space */
+}
+
+.testimonial-box {
+    flex: 0 0 30vw;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .testimonial-box {
+        flex: 0 0 80vw;    /* Adjust the width for mobile view */
+    }
+}

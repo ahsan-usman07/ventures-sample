@@ -1,0 +1,158 @@
+.navbar {
+
+    // margin: 20px 34px;
+    .navbar-nav {
+
+        .nav-item {
+            padding: 0 40px 0 0;
+
+            .nav-link {
+                color: black;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+                letter-spacing: 0.14px;
+            }
+
+            .contact-us-btn {
+                height: 40px;
+                padding: 10px 24px;
+                gap: 10px;
+                width: 100%;
+                background-color: black;
+                border-radius: 56px;
+                color: white;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        margin: 20px 34px;
+    }
+
+    .navbar-brand {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    // for mobile responsive
+    .navbar {
+        .navbar-nav {
+            margin-left: 40px !important;
+            margin-right: auto;
+
+            .nav-item {
+                margin-bottom: 40px;
+
+                .nav-link {
+                    font-size: 18px;
+                }
+
+                .contact-us-btn {
+                    height: 40px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .navbar-collapse {
+        transition: none;
+        /* Remove transition to avoid initial gap */
+    }
+
+    .navbar-collapse.show {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(214, 214, 214);
+        /* Ensure the background color is pink */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        overflow-y: auto;
+        z-index: 1040;
+        /* Ensure it's above other content */
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 10px;
+        z-index: 1051;
+        border: none;
+        /* Ensure the toggler is above the navbar */
+    }
+
+    .navbar-brand {
+        z-index: 1051;
+    }
+}
+
+/* Ensures the logo is not centered on larger screens */
+@media (min-width: 992px) {
+    .navbar-brand.mx-auto {
+        display: none;
+    }
+
+    .navbar-brand.d-none {
+        display: block !important;
+    }
+}
+
+
+/* Add this to your styles.css or the relevant CSS file */
+.autohide {
+    transition: top 0.3s;
+    top: 0;
+    position: fixed;
+    padding: 20px 34px;
+    width: 100%;
+    z-index: 1030;
+    margin: 0;
+    background-color: white;
+    /* Ensure the background color is pink */
+}
+
+.hide {
+    top: -100px;
+    /* Adjust this value as needed to hide the navbar */
+}
+
+.navbar-placeholder {
+    height: 56px;
+    /* Adjust this height to match your navbar's height */
+}
+
+
+
+@media only Screen and (max-width: 576px) {}

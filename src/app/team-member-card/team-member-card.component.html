@@ -1,0 +1,21 @@
+<div class="card profile-card">
+    <div class="profile-picture mb-3">
+        <img [src]="member.imageUrl" class="card-img-top responsive-image" alt="{{ member.fullName }}">
+    </div>
+    
+    <div class="row align-items-center">
+        <div class="col">
+            <p class="member-name">{{ member.fullName }}</p>
+        </div>
+        <div class="col-auto">
+            <a [href]="member.linkedinAddress" class="btn-linkedin" target="_blank">
+                <img src="assets/teams page/linkedin logo.svg" alt="LinkedIn" class="icon">
+            </a>
+        </div>
+    </div>
+    <p class="member-position">{{ member.designation }}</p>
+    <a class="read-bio" (click)="showDetails()">
+        Read Bio
+        <img src="assets/teams page/Read More.svg" alt="Read More" class="icon">
+    </a>
+</div>

@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    margin-left: 50vw; /* Adjust margin to center the container */
+    transform: translateX(-50%); /* Center the container */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    margin: 10px;
+    opacity: 0;
+}
+
+.text-container {
+    padding: 5% 10% 0 10%;
+}
+
+@media screen and (max-width: 576px) {
+    .text-container {
+        padding: 20px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        margin-left: 0; /* Remove centering for small screens */
+        transform: none; /* Remove centering for small screens */
+    }
+}

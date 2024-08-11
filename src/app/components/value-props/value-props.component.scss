@@ -1,0 +1,97 @@
+
+.contain {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+     overflow: hidden; /* Prevent container from scrolling */
+}
+
+
+.column {
+    flex: 1;
+    overflow: hidden;
+
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Light grey background for left column */
+    position: relative;
+}
+
+.right {
+    overflow-y: scroll; /* Enable vertical scrolling */
+    background-color: white; /* White background for right column */
+}
+
+.right::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Webkit-based browsers */
+}
+
+.section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd; /* Light border for sections */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.circle {
+    width: 300px;
+    margin: 180px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.inner-circle {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    transform-origin: center; /* Ensures rotation around the center */
+}
+.inner-circle.active {
+    background-color: red;
+}
+
+/* Positioning the four inner circles */
+#top-left {
+    // top: 0; /* Adjust values as needed */
+    // left: -50px;
+    top: -60px;
+}
+
+#top-right {
+    // top: 0;
+    right: -50px;
+}
+
+#bottom-left {
+    // bottom: 0;
+    // left: -50px;
+    bottom: -60px;
+}
+
+#bottom-right {
+    // bottom: 0;
+    // right: -50px;
+    left: -60px;
+}

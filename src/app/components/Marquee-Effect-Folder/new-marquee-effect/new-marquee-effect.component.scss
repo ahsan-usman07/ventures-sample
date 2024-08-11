@@ -1,0 +1,35 @@
+
+.wrapper {
+    width: auto;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background: lightgray;
+    font-size: 25px;
+    line-height: 300px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Add space between boxes */
+}
+
+.boxes {
+    position: relative;
+    left: -320px; /* Adjust according to margin-right of .box */
+}
+
+.nav {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+}

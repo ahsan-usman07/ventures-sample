@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+.container {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header, .subheader {
+    transition: opacity 0.5s, transform 0.5s;
+    position: relative;
+    z-index: 1;
+    background: white; /* To ensure the text is readable when overlapped */
+}
+
+.header {
+    margin-bottom: 5px;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 44px;
+    letter-spacing: 0.32px;
+}
+
+.subheader p {
+    text-align: end;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.32px;
+}
+
+.content {
+    width: 100%;
+    height: calc(100vh - 130px); /* Adjust based on header and subheader height */
+    background-color: lightgray;
+    border-radius: 10px;
+    overflow: auto;
+    position: relative;
+    z-index: 0;
+}
+
+.scrolled .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 130px; /* Adjust based on header and subheader height */
+    z-index: 0;
+}
+
+.scrolled .header, .scrolled .subheader {
+    opacity: 0;
+    transform: translateY(-50px);
+}
