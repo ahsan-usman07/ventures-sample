@@ -29,20 +29,37 @@ export class MainTeamComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.animateTeamTitle();
   }
-
+  
   animateTeamTitle(): void {
     const teamTitle = document.getElementById('meetTeamContainer');
     const leadershipContainer = document.getElementById('leadershipContainer');
-
-      ScrollTrigger.create({
-        trigger: teamTitle,
-        start: 'top top',
-        endTrigger: leadershipContainer,
-        end: '+=99999',
-        pin: true,
-        pinSpacing: false
-      });
+  
+    ScrollTrigger.create({
+      trigger: teamTitle,
+      start: 'top top',
+      endTrigger: leadershipContainer,
+      end: 'top top', // Adjust the end point to when the leadership container starts overlapping
+      pin: true,
+      pinSpacing: false,
+      onUpdate: (self) => {
+        const progress = self.progress;
+        if (progress >= 0.9) { // Adjust this value based on when you want the fade to start
+          gsap.to(teamTitle, {
+            opacity: 0,
+            duration: 1, // Duration of the fade-out
+            ease: 'power1.out',
+          });
+        } else {
+          gsap.to(teamTitle, {
+            opacity: 1,
+            duration: 1,
+            ease: 'power1.out',
+          });
+        }
+      }
+    });
   }
+  
  
   toggleAnswerState() {
     this.answerState = this.answerState === 'hidden' ? 'visible' : 'hidden';

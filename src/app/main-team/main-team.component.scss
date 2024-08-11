@@ -1,40 +1,45 @@
 .team-container {
-    margin: 40px 52px 40px 52px;
+    margin: 54px 52px 40px 52px;
 }
 
 /* Styles for the Meet the Team section */
 
 .team-title {
-    font-size: 50px;
+    font-size: 60px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
+    padding: 0 15px 0 15px;
     line-height: 72px;
+    text-align: left;
     position: relative;
+    margin-bottom: 24px;
     z-index: 10;
-    background-color: white; /* To avoid text overlap */
+    background-color: white;
 }
 
 .team-description {
     font-size: 28px;
     font-style: normal;
-    font-weight: 500;
-    color: #1a1a1a;
-    line-height: 32px;
-    padding: 0 160px 0 160px;
+    font-weight: 400;
+    line-height: 44px;
+    padding: 0 15px 0 15px;
     word-break: break-word;
+    text-align: left;
     position: relative;
     z-index: 10;
-    background-color: white; /* To avoid text overlap */
+    background-color: white;
 }
 
 .meet-leadership-container {
-    background-color: white; /* Ensure solid background to cover text below */
+    background-color: white;
+    /* Ensure solid background to cover text below */
     position: relative;
+    margin-top: 44px;
 }
 
 
 /* Styles for the Ethos Invest Team section */
-.ethos-invest-team-title{
+.ethos-invest-team-title {
     margin-top: 44px;
 }
 
@@ -78,24 +83,12 @@
     }
 }
 
-::ng-deep .popupBackdropClass{
+::ng-deep .popupBackdropClass {
     background: rgba(0, 0, 0, .32);
 }
 
-
 /* For Responsiveness */
 
-@media (max-width: 992px) {
-    .team-description {
-        padding: 0 100px 0 100px;
-    }
-}
-
-@media (max-width: 768px) {
-    .team-description {
-        padding: 0 75px 0 75px;
-    }
-}
 
 @media screen and (max-width: 576px) {
     .team-container {
@@ -112,13 +105,17 @@
         font-style: normal;
         font-weight: 500;
         line-height: 72px;
+        margin-bottom: 12px;
+        text-align: center;
+        padding: 0;
     }
-    
+
     .team-description {
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        line-height: 32px; /* 160% */
+        line-height: 32px;
+        /* 160% */
         letter-spacing: 0.5px;
         padding: 0;
         text-align: left;
@@ -142,8 +139,8 @@
             border-bottom-right-radius: 0px;
         }
     }
-    ::ng-deep .popupBackdropClass{
+
+    ::ng-deep .popupBackdropClass {
         background-color: rgba(0, 58, 136, 0.4);
     }
 }
-
