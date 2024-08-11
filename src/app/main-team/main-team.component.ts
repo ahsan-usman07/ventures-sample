@@ -29,7 +29,7 @@ export class MainTeamComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.animateTeamTitle();
   }
-  
+
   animateTeamTitle(): void {
     const teamTitle = document.getElementById('meetTeamContainer');
     const leadershipContainer = document.getElementById('leadershipContainer');
@@ -59,8 +59,21 @@ export class MainTeamComponent implements OnInit, AfterViewInit {
       }
     });
   }
-  
  
+  // animateTeamTitle(): void {
+  //   const teamTitle = document.getElementById('meetTeamContainer');
+  //   const leadershipContainer = document.getElementById('leadershipContainer');
+
+  //     ScrollTrigger.create({
+  //       trigger: teamTitle,
+  //       start: 'top top',
+  //       endTrigger: leadershipContainer,
+  //       end: '+=99999',
+  //       pin: true,
+  //       pinSpacing: false
+  //     });
+  // }
+
   toggleAnswerState() {
     this.answerState = this.answerState === 'hidden' ? 'visible' : 'hidden';
   }
