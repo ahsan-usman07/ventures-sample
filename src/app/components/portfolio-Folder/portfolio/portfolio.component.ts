@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -7,19 +8,29 @@ gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent implements OnInit, AfterViewInit{
-
+  isMobile: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+    this.checkScreenSize();
   }
 
   ngAfterViewInit(): void {
     this.initScrollAnimation();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenSize();
+  }
+
+  checkScreenSize() {
+    this.isMobile = window.innerWidth < 768;
   }
 
   initScrollAnimation(): void {

@@ -1,16 +1,24 @@
 <div class="page-wrapper">
     <div class="wrapper">
+      <div *ngIf="!isMobile" class="business-section">
+        <h1 class="business-title">Ethos Ventures</h1>
+        <h2 class="business-subtitle">Our Businesses</h2>
+        <p class="business-description">
+          Ethos is a leading investment firm committed to fostering sustainable and socially responsible economic growth through Shariah-compliant investments. Ethos is a leading investment firm committed to fostering sustainable and socially responsible economic growth through Shariah-compliant investments.
+        </p>
+      </div>
       <div class="card-wrapper">
-        <div class="mt-4 cards card-1">
+        <div class="cards card-1">
           <div class="row align-items-center">
-              <div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-left">
+              <div class="col-md-6">
                   <h2>Ethos Invest</h2>
                   <h3>Investing globally for today and for future generations.</h3>
+                  <div *ngIf="isMobile" class="image-placeholder mt-3"></div>
                   <p>Delivering innovative banking solutions that are ethical and fair at every step of life’s journey, helping achieve financial goals without compromising values. Save for the future while using your money as a force for good.</p>
                   <button class="btn visit-ethos mt-3">Visit Ethos Invest</button>
               </div>
-              <div class="col-12 col-md-6 order-1 order-md-2 text-center">
-                  <div class="image-placeholder"></div>
+              <div *ngIf="!isMobile" class="col-md-6">
+                <div class="image-placeholder"></div>
               </div>
           </div>
           <div class="border-bottom-custom mx-auto"></div>
@@ -19,31 +27,33 @@
       
       
         <!-- Repeat for other cards -->
-        <div class="mt-4 cards card-2">
+        <div class="cards card-2">
           <div class="row align-items-center">
               <div class="col-md-6">
                 <h2>Ethos Money</h2>
                 <h3>Ethical banking for everyone.</h3>
+                <div *ngIf="isMobile" class="image-placeholder mt-3"></div>
                   <p>Delivering innovative banking solutions that are ethical and fair at every step of life’s journey, helping achieve financial goals without compromising values. Save for the future while using your money as a force for good.</p>
                   <button class="btn visit-ethos mt-3">Visit Ethos Invest</button>
               </div>
-              <div class="col-md-6">
-                  <div class="image-placeholder"></div>
+              <div *ngIf="!isMobile" class="col-md-6">
+                <div class="image-placeholder"></div>
               </div>
           </div>
           <div class="border-bottom-custom mx-auto"></div>
       </div>
 
-        <div class="mt-4 cards card-3">
+        <div class="cards card-3">
           <div class="row align-items-center">
               <div class="col-md-6">
                 <h2>Ethos Saudi</h2>
                 <h3>Ethical banking for everyone.</h3>
+                <div *ngIf="isMobile" class="image-placeholder mt-3"></div>
                   <p>Delivering innovative banking solutions that are ethical and fair at every step of life’s journey, helping achieve financial goals without compromising values. Save for the future while using your money as a force for good.</p>
-                  <button class="btn visit-ethos mt-3">Visit Ethos Invest</button>
+                  <button class="btn visit-ethos mt-3">Learn More</button>
               </div>
-              <div class="col-md-6">
-                  <div class="image-placeholder"></div>
+              <div *ngIf="!isMobile" class="col-md-6">
+                <div class="image-placeholder"></div>
               </div>
           </div>
           <div class="border-bottom-custom mx-auto"></div>

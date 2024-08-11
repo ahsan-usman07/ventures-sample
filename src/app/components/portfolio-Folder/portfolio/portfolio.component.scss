@@ -4,12 +4,50 @@
 //     /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
 //   }
 
+.business-section {
+  margin: 0 67px 0 67px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  height: 100vh; /* Makes the section take up the full height of the viewport */
+
+  .business-title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 72px; /* 112.5% */
+    letter-spacing: 0.64px;
+    margin-bottom: 10px;
+  }
+
+  .business-subtitle {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 136.364% */
+    letter-spacing: 0.44px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+
+  .business-description {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 1px;
+  }
+}
+
+
 .card-wrapper {
   position: relative;
   overflow: hidden;
   padding-top: 30px;
   /* Distance from the top */
 }
+
 .border-bottom-custom {
   width: 100%;
   border-bottom: 1px solid black;
@@ -38,7 +76,8 @@
   margin-bottom: 24px;
 }
 
-.cards h3,p{
+.cards h3,
+p {
   font-size: 20px;
   font-style: normal;
   font-weight: 200;
@@ -83,51 +122,43 @@
 }
 
 
-@media screen and (max-width: 576px) {
-  .card-wrapper {
-    position: relative;
-    overflow: hidden;
-    padding-top: 30px;
-    /* Distance from the top */
-  }
+@media screen and (max-width: 768px) {
 
   .cards {
     width: auto;
-    height: 80vh;
-    background-color: #fff;
-    border-bottom: 1px solid black;
+    height: 85vh;
     padding: 16px;
-    margin: 16px auto;
-    /* Center the card and add margin */
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    /* Ensure padding and border are included in width/height */
   }
 
   .cards h2 {
-    font-size: 1.5rem;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 114.286% */
+    letter-spacing: 0.28px;
     margin-bottom: 8px;
   }
 
-  .cards h3 {
-    font-size: 1rem;
-    margin-bottom: 16px;
-    color: #666;
+  .cards h3,
+  p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 20px;
+    /* 125% */
+    letter-spacing: 0.16px;
+    margin-bottom: 19px;
   }
 
   .image-placeholder {
     width: 100%;
-    height: 200px;
+    height: 180px;
     background-color: #e0e0e0;
     border-radius: 8px;
     margin-bottom: 16px;
   }
 
-  .cards p {
-    font-size: 0.875rem;
-    margin-bottom: 16px;
-  }
 
   .visit-ethos {
     padding: 10px 20px;
@@ -135,8 +166,12 @@
     border-radius: 24px;
     background-color: white;
     color: black;
+    width: max-content;
+    display: block; /* Ensure it's treated as a block element */
+    margin: 0 auto; /* Center the button horizontally */
     cursor: pointer;
     font-size: 1rem;
+    text-align: center; /* Center text if necessary */
   }
 
   .cards:not(:first-child) {
