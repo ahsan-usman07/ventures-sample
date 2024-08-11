@@ -5,13 +5,14 @@ import { TextAnimationComponent } from '../../components/text-animation/text-ani
 import { TeamComponent } from '../../components/team/team.component';
 import { HorizontalScrollCardsComponent } from '../../components/why-Us-Folder/horizontal-scroll-cards/horizontal-scroll-cards.component';
 import { CommonModule } from '@angular/common';
+import { TeamHorizontalComponent } from '../../components/team-horizontal/team-horizontal.component';
 
 gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-homepage3',
   standalone: true,
-  imports: [TextAnimationComponent, TeamComponent, HorizontalScrollCardsComponent, CommonModule],
+  imports: [TextAnimationComponent, TeamComponent, HorizontalScrollCardsComponent, CommonModule, TeamHorizontalComponent],
   templateUrl: './homepage3.component.html',
   styleUrl: './homepage3.component.scss'
 })

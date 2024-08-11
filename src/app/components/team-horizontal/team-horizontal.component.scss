@@ -1,46 +1,64 @@
-.container {
+#horizontal-scroll {
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 20px;
-    margin-left: 50vw; /* Adjust margin to center the container */
-    transform: translateX(-50%); /* Center the container */
+    justify-content: flex-end;
 }
 
-.row {
+.horizontal-scroll-wrapper {
+    overflow: hidden;
+    height: 100vh;
+    padding: 0 0 0 100%;
+}
+
+.horizontal-container {
     display: flex;
+    height: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
-.box {
-    display: inline-block;
-    width: 120px;
-    height: 120px;
-    background-color: #d9d9d9;
-    border-radius: 20px;
-    margin: 10px;
-    opacity: 0;
+.horizontal-container>div {
+    display: flex;
+    padding: 0 5px;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
-.text-container {
-    padding: 5% 10% 0 10%;
+.horizontal-container>div:first-child {
+    padding: 0 5px 0 15px;
 }
 
-@media screen and (max-width: 576px) {
-    .text-container {
-        padding: 20px;
+.horizontal-container>div:last-child {
+    padding: 0 15px 0 5px;
+}
+
+.horizontal-container .card {
+    margin: 15px;
+    align-items: stretch;
+    width: 280px;
+    /* Adjusted card width to better match the image */
+    height: 280px;
+    /* Adjusted card height to match the image */
+    background: #f7f7f7;
+    border-radius: 25px;
+    /* Reduced the border radius to match the image */
+}
+
+@media screen and (max-width: 768px) {
+
+    .horizontal-scroll-wrapper {
+        overflow: hidden;
+        height: 525px;
+        padding: 0 0 0 100%;
     }
 
-    .box {
-        width: 100px;
-        height: 100px;
-    }
-
-    .container {
-        margin-left: 0; /* Remove centering for small screens */
-        transform: none; /* Remove centering for small screens */
+    .horizontal-container .card {
+        margin: 5px;
+        align-items: stretch;
+        width: 150px;
+        height: 150px;
     }
 }
