@@ -171,3 +171,24 @@
     // right: -50px;
     left: -60px;
 }
+
+@media screen and (max-width:1192px ) {
+    .right-element {
+        font-size: 40px;
+    }
+
+    .circle {
+        width: 325px;
+        margin: 180px 25% 180px 25%;
+        height: 325px;
+    }
+}
+
+
+@media screen and (max-width:992px ) {
+    .circle {
+        width: 300px;
+        margin: 180px 10% 180px 10%;
+        height: 300px;
+    }
+}
