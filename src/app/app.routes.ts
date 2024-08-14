@@ -20,6 +20,7 @@ import { TeamHorizontalComponent } from './components/team-horizontal/team-horiz
 import { Homepage3Component } from './Home-Pages/homepage3/homepage3.component';
 import { NewTeamComponent } from './new-team/new-team.component';
 import { MainTeamComponent } from './main-team/main-team.component';
+import { LateralSectionComponent } from './lateral-section/lateral-section.component';
 
 export const routes: Routes = [
     {
@@ -85,5 +86,8 @@ export const routes: Routes = [
     },
     {
         path: 'team-1', component: MainTeamComponent
+    },
+    {
+        path: 'lateral-section', component: LateralSectionComponent
     }
 ];

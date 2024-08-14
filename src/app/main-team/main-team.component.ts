@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { LateralSectionComponent } from '../lateral-section/lateral-section.component';
 
 gsap.registerPlugin(ScrollTrigger);
 
