@@ -15,19 +15,19 @@ gsap.registerPlugin(ScrollTrigger);
 export class WhyUsNewComponent implements AfterViewInit {
 
   ngAfterViewInit() {
-    this.animateCards();
+    this.animateWhyUsCards();
   }
 
-  animateCards() {
-    let horizontalSection:any = document.querySelector('.horizontal');
-    gsap.to('.horizontal', {
+  animateWhyUsCards() {
+    let horizontalSection:any = document.querySelector('.why-us-horizontal');
+    gsap.to('.why-us-horizontal', {
       x: () => horizontalSection.scrollWidth * -1,
       xPercent: 100,
       scrollTrigger: {
-        trigger: '.horizontal',
+        trigger: '.why-us-horizontal',
         start: 'center center',
         end: '+=2000px',
-        pin: '#horizontal-scoll',
+        pin: '#why-us-horizontal-scroll',
         scrub: true,
         invalidateOnRefresh: true
       }

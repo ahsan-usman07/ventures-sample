@@ -27,7 +27,7 @@ export const routes: Routes = [
         path: 'horizontal-scroll', component: HorizontalScrollComponent
     },
     {
-        path: '', pathMatch: 'full', component: LandingPageComponent
+        path: 'landing-page', component: LandingPageComponent
     },
     {
         path: 'parallax', component: ParallaxComponent
@@ -70,7 +70,7 @@ export const routes: Routes = [
         path: 'homepage1', component: Homepage1Component
     },
     {
-        path: 'homepage3', component: Homepage3Component
+        path: '', pathMatch: 'full', component: Homepage3Component
     },
     {
         path: 'homepage4', component: Homepage4Component

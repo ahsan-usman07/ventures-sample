@@ -84,3 +84,16 @@
       /* 120% */
       letter-spacing: 0.173px;
   }
+
+  @media screen and (max-width: 768px) {
+    #horizontal-scoll {
+        padding: 60px 0 60px 30px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .horizontal .card {
+        width: 320px;
+    }
+  
+  }

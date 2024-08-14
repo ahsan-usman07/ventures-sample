@@ -7,13 +7,14 @@ import { HorizontalScrollCardsComponent } from '../../components/why-Us-Folder/h
 import { CommonModule } from '@angular/common';
 import { TeamHorizontalComponent } from '../../components/team-horizontal/team-horizontal.component';
 import { LateralSectionComponent } from '../../lateral-section/lateral-section.component';
+import { WhyUsNewComponent } from '../../components/why-Us-Folder/why-us-new/why-us-new.component';
 
 gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-homepage3',
   standalone: true,
-  imports: [TextAnimationComponent, TeamComponent, HorizontalScrollCardsComponent, CommonModule, TeamHorizontalComponent, LateralSectionComponent],
+  imports: [TextAnimationComponent, TeamComponent, HorizontalScrollCardsComponent, CommonModule, TeamHorizontalComponent, LateralSectionComponent, WhyUsNewComponent],
   templateUrl: './homepage3.component.html',
   styleUrl: './homepage3.component.scss'
 })
@@ -39,25 +40,26 @@ export class Homepage3Component implements OnInit {
 
   setupAnimations(): void {
     const triggerElement = ".full-container";
-
+  
     gsap.to("#first-head", {
-      x: 100,
+      x: 50, // Reduced distance for slower effect
       scrollTrigger: {
         trigger: triggerElement,
         start: "top center",
         end: "bottom top",
-        scrub: true
+        scrub: 2 // Higher scrub value for a slower effect
       }
     });
-
+  
     gsap.to("#second-head", {
-      x: -100,
+      x: -50, // Reduced distance for slower effect
       scrollTrigger: {
         trigger: triggerElement,
         start: "top center",
         end: "bottom top",
-        scrub: true
+        scrub: 2 // Higher scrub value for a slower effect
       }
     });
   }
+  
 }

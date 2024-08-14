@@ -1,4 +1,4 @@
-.image-container{
+.image-container {
     margin-top: 35px;
     padding: 0 100px 0 100px;
 }
@@ -19,19 +19,21 @@
     font-weight: 100;
 }
 
-.image-header{
+.image-header {
     font-size: 72px;
     font-style: normal;
     font-weight: 100;
-    line-height: 100px; /* 138.889% */
+    line-height: 100px;
+    /* 138.889% */
     letter-spacing: 0.72px;
 }
 
-.image-sub-header{
+.image-sub-header {
     font-size: 72px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100px; /* 138.889% */
+    line-height: 100px;
+    /* 138.889% */
     letter-spacing: 0.72px;
     margin-left: 50px;
 }
@@ -59,17 +61,20 @@
     font-size: 44px;
     font-style: normal;
     font-weight: 100;
-    line-height: 60px; /* 136.364% */
+    line-height: 60px;
+    /* 136.364% */
     letter-spacing: 0.44px;
     margin: 0;
 }
 
 .second-head {
-    width: calc(100% - 200px); /* Full width minus 20px */
+    width: calc(100% - 200px);
+    /* Full width minus 20px */
     font-size: 44px;
     font-style: normal;
     font-weight: 400;
-    line-height: 60px; /* 136.364% */
+    line-height: 60px;
+    /* 136.364% */
     letter-spacing: 0.44px;
     margin: 0;
 }
@@ -78,34 +83,62 @@
     font-size: 28px;
     font-style: normal;
     font-weight: 300;
-    line-height: 40px; /* 142.857% */
+    line-height: 40px;
+    /* 142.857% */
     letter-spacing: 1px;
     text-align: left;
 }
 
+.large-screen {
+    display: block;
+  }
+  
+  .small-screen {
+    display: none;
+  }
+
 @media screen and (max-width: 768px) {
-    .image-container{
+    .image-container {
         margin-top: 35px;
         padding: 0 20px 0 20px;
     }
+    .large-screen {
+        display: none;
+      }
+      
+      .small-screen {
+        display: block;
+      }
 }
 
 @media screen and (max-width: 576px) {
-    
+
     .full-container {
         padding: 0 10px;
     }
 
     .first-head {
-        font-size: 24px;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 36px;
+        letter-spacing: 0.28px;
     }
 
     .second-head {
-        font-size: 20px;
-        font-weight: 600;
+        width: calc(125% - 5px);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.28px;
     }
 
     .desc-text {
-        font-size: 0.9rem;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 32px;
+        letter-spacing: 1px;
     }
 }
